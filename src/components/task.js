@@ -1,5 +1,5 @@
-import {MONTH_NAMES} from '../const.js';
-import {createElement, formatTime} from '../utils.js';
+import {MONTH_NAMES} from "../const.js";
+import {createElement, formatTime} from "../utils.js";
 
 
 const createTaskTemplate = (task) => {
