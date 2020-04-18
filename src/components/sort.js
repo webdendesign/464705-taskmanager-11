@@ -1,4 +1,6 @@
-export const createSortingTemplate = () => {
+import AbstractComponent from "./abstract-component.js";
+
+export const createSortTemplate = () => {
   return (
     `<div class="board__filter-list">
       <a href="#" class="board__filter">SORT BY DEFAULT</a>
@@ -7,3 +9,9 @@ export const createSortingTemplate = () => {
     </div>`
   );
 };
+
+export default class Sort extends AbstractComponent {
+  getTemplate() {
+    return createSortTemplate();
+  }
+}

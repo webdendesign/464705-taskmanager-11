@@ -1,3 +1,5 @@
+import AbstractComponent from "./abstract-component.js";
+
 export const createSiteMenuTemplate = () => {
   return (
     `<section class="control__btn-wrap">
@@ -30,3 +32,9 @@ export const createSiteMenuTemplate = () => {
     </section>`
   );
 };
+
+export default class SiteMenu extends AbstractComponent {
+  getTemplate() {
+    return createSiteMenuTemplate();
+  }
+}
